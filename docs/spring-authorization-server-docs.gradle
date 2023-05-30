@@ -17,6 +17,8 @@ asciidoctor {
 	])
 }
 
+asciidoctor.dependsOn(':spring-authorization-server-docs-examples:processResources')
+
 docsZip {
 	from (api) {
 		into "api"
